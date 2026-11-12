@@ -382,6 +382,20 @@
   .mehr { margin: 2.25rem 0 0; }
   .mehr a { display: inline-block; padding: .75rem 1.25rem; border: 1px solid var(--gold); border-radius: 4px; color: var(--ink); font-weight: 600; text-decoration: none; }
   .mehr a:hover, .mehr a:focus-visible { background: var(--gold); color: #fff; }
+  :root { --gold-text: #805E31; --cyan-text: #116C7B; --blau-text: #2E679C; }
+  @media (prefers-color-scheme: dark) { :root { --gold-text: var(--gold); --cyan-text: #5CC0D0; --blau-text: #8DBBE3; } }
+  .hero, .dark, .kontakt, .risiken { --gold-text: var(--gold); }
+  .rubrik, .card .sym, .p-core .rubrik-c, .dk em { color: var(--gold-text); }
+  .p-energy .rubrik-e { color: var(--cyan-text); }
+  .p-energy .projekt-links a { color: var(--blau-text); }
+  footer .recht { display: flex; flex-wrap: wrap; gap: 1.5rem; margin: 0 0 1rem; }
+  footer .recht a { color: #C9CDD1; font-weight: 600; }
+  footer .recht a[aria-current="page"] { color: var(--gold-hell); }
+  .recht-seite { padding: clamp(3rem, 8vw, 5.5rem) 0; }
+  .recht-seite h3 { font-size: 1.15rem; margin: 2rem 0 .5rem; }
+  .recht-seite p { max-width: 46rem; color: var(--muted); }
+  .recht-seite p strong { color: var(--ink); }
+  .recht-seite a { color: var(--blau-text); }
 </style>
 </head>
 <body>
@@ -652,21 +666,10 @@
 
 <footer>
   <div class="container">
-    <details id="impressum">
-      <summary>Impressum</summary>
-      <p>Angaben gemäß § 5 Digitale-Dienste-Gesetz (DDG)</p>
-      <p>Thomas Marcus Köhler<br>THE PATTERN MIND<br>Gustav-Adolf-Straße 30<br>04105 Leipzig</p>
-      <p>E-Mail: thomas.koehler@thepatternmind.de</p>
-      <p>Verantwortlich für den Inhalt: Thomas Marcus Köhler, Anschrift wie oben.</p>
-    </details>
-    <details id="datenschutz">
-      <summary>Datenschutz</summary>
-      <p>Verantwortlich: Thomas Marcus Köhler, Anschrift und Kontakt siehe Impressum.</p>
-      <p>Diese Website verwendet keine Cookies, keine Analyse- oder Tracking-Werkzeuge und lädt keine Inhalte von Drittanbietern wie Schriften oder Karten.</p>
-      <p><strong>Bereitstellung der Website.</strong> Die Website wird über GitHub Pages bereitgestellt (GitHub, Inc., USA). Beim Aufruf verarbeitet GitHub technisch notwendige Daten wie die IP-Adresse, um die Seite auszuliefern und vor Missbrauch zu schützen. Rechtsgrundlage ist das berechtigte Interesse an einer sicheren und funktionsfähigen Bereitstellung der Website (Art. 6 Abs. 1 lit. f DSGVO). Die Übermittlung in die USA erfolgt auf Grundlage des EU-US Data Privacy Framework, unter dem GitHub zertifiziert ist. Die Speicherdauer richtet sich nach der Datenschutzerklärung von GitHub.</p>
-      <p><strong>Kontakt per E-Mail.</strong> Wenn Sie per E-Mail Kontakt aufnehmen, werden Ihre Angaben ausschließlich zur Bearbeitung der Anfrage verwendet. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO, soweit die Anfrage auf einen Vertrag zielt, im Übrigen Art. 6 Abs. 1 lit. f DSGVO. E-Mails werden über IONOS SE, Montabaur, verarbeitet. Die Daten werden gelöscht, sobald die Anfrage abschließend bearbeitet ist und keine gesetzlichen Aufbewahrungspflichten entgegenstehen.</p>
-      <p><strong>Ihre Rechte.</strong> Sie haben das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung und Datenübertragbarkeit sowie das Recht, der Verarbeitung auf Grundlage berechtigter Interessen zu widersprechen. Zudem besteht ein Beschwerderecht bei einer Datenschutzaufsichtsbehörde, etwa der Sächsischen Datenschutz- und Transparenzbeauftragten.</p>
-    </details>
+    <nav class="recht" aria-label="Rechtliches">
+      <a href="impressum.html">Impressum</a>
+      <a href="datenschutz.html">Datenschutz</a>
+    </nav>
     <p class="copy">© 2026 Thomas Marcus Köhler · THE PATTERN MIND · Vernetzt denken</p>
   </div>
 </footer>
