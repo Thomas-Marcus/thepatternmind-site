@@ -396,6 +396,16 @@
   .recht-seite p { max-width: 46rem; color: var(--muted); }
   .recht-seite p strong { color: var(--ink); }
   .recht-seite a { color: var(--blau-text); }
+  /* Kontakt: Porträt und Hirsch nebeneinander */
+  .kontakt.wm { --wm-o: .22; }
+  .kontakt.wm::after { top: 50%; transform: translateY(-50%); }
+  .kontakt-grid { grid-template-columns: 1fr auto; }
+  .kontakt-foto { width: clamp(11rem, 20vw, 16rem); max-width: none; margin-right: calc(clamp(9rem, 20vw, 16rem) + 1.75rem); }
+  @media (max-width: 820px) {
+    .kontakt.wm::after { top: 5rem; transform: none; }
+    .kontakt-grid { grid-template-columns: 1fr; }
+    .kontakt-foto { justify-self: start; margin: 0; width: min(12rem, 50vw); }
+  }
 </style>
 </head>
 <body>
@@ -427,7 +437,7 @@
       <p class="rubrik">THE PATTERN MIND</p>
       <h1>Von Beobachtung zu Erkenntnis.</h1>
       <p class="sub">Sensible Wahrnehmung, systemischer Überblick und ein kritisch geführter Dialog zwischen Mensch und KI: so werden in komplexen Zusammenhängen relevante Muster sichtbar und überprüfbar.</p>
-      <p class="person"><strong>Thomas Marcus Köhler</strong>Dipl.-Betriebswirt (FH) · Zertifizierter Data Analyst · Schwerpunkt Künstliche Intelligenz<br>Senior Business Development &amp; Strategic Partnerships · Energy &amp; Infrastructure</p>
+      <p class="person"><strong>Thomas Marcus Köhler</strong>Dipl.-Betriebswirt (FH) · Zertifizierter Data Analyst · Schwerpunkt Künstliche Intelligenz<br>Senior Business Development &amp; Strategic Partnerships · Data Analytics &amp; AI · Energy &amp; Infrastructure</p>
       <div class="buttons">
         <a class="btn btn-gold" href="#projekte">Projekte ansehen</a>
         <a class="btn btn-line" href="#kontakt">Kontakt aufnehmen</a>
