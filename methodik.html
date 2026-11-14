@@ -504,6 +504,93 @@
       <div><strong>Disruption</strong><span>öffnet den Denkraum.</span></div>
       <div><strong>Rekonstruktion</strong><span>schafft neue Zusammenhänge und überprüfbare Lösungen.</span></div>
     </div>
+    <!-- THE PATTERN MIND · Field Note 04 „Das epistemische Modell“ – Grafik: assets/epistemisches-modell.png -->
+<style>
+  .tpm-epi { --tpm-teal:#3FC1B0; --tpm-card:#0B0B0B; --tpm-line:#262626; --tpm-text:#CFCFCF; --tpm-muted:#8C8C8C;
+             max-width: 1150px; margin: 4.5rem auto; padding: 0 1.25rem; color: var(--tpm-text); font: inherit; }
+  .tpm-epi .tpm-eyebrow { color: var(--tpm-teal); font-size: .8rem; font-weight: 600;
+             letter-spacing: .14em; text-transform: uppercase; margin: 0 0 .6rem; }
+  .tpm-epi h2 { color: #F2F2F2; font-size: clamp(1.8rem, 3.2vw, 2.6rem); line-height: 1.15; margin: 0 0 1rem; }
+  .tpm-epi .tpm-lead { font-size: 1.15rem; line-height: 1.6; color: #B5B5B5; max-width: 46rem; margin: 0 0 2.25rem; }
+  .tpm-epi figure { margin: 0 0 2rem; }
+  .tpm-epi figure img { width: 100%; height: auto; display: block; border: 1px solid var(--tpm-line); border-radius: 10px; }
+  .tpm-epi .tpm-states { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1rem; margin: 0 0 2rem;
+             padding: 0; list-style: none; }
+  .tpm-epi .tpm-states li { background: var(--tpm-card); border: 1px solid var(--tpm-line); border-radius: 10px;
+             padding: 1.15rem 1.2rem; }
+  .tpm-epi .tpm-states strong { display: block; color: #F2F2F2; font-size: 1.05rem; margin-bottom: .4rem; }
+  .tpm-epi .tpm-states span { font-size: .95rem; line-height: 1.5; color: var(--tpm-muted); }
+  .tpm-epi .tpm-example { background: var(--tpm-card); border: 1px solid var(--tpm-line); border-left: 3px solid var(--tpm-teal);
+             border-radius: 10px; padding: 1.2rem 1.4rem; margin: 0 0 2.25rem; line-height: 1.65; }
+  .tpm-epi .tpm-example b { color: var(--tpm-teal); font-weight: 600; }
+  .tpm-epi h3 { color: var(--tpm-teal); font-size: 1.05rem; font-weight: 600; margin: 2.25rem 0 .6rem; }
+  .tpm-epi p { line-height: 1.7; }
+  .tpm-epi .tpm-checklist { columns: 2; column-gap: 2.5rem; padding-left: 1.2rem; line-height: 1.8; margin: 0; }
+  .tpm-epi .tpm-checklist li::marker { color: var(--tpm-teal); }
+  .tpm-epi .tpm-core { font-size: 1.15rem; font-weight: 600; color: #F2F2F2; border-top: 1px solid var(--tpm-line);
+             padding-top: 1.5rem; margin-top: 2.5rem; }
+  .tpm-epi .tpm-note { font-size: .85rem; color: var(--tpm-muted); }
+  @media (max-width: 860px) {
+    .tpm-epi .tpm-states { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .tpm-epi .tpm-checklist { columns: 1; }
+  }
+  @media (max-width: 520px) {
+    .tpm-epi .tpm-states { grid-template-columns: 1fr; }
+  }
+</style>
+
+<section class="tpm-epi" id="epistemisches-modell" aria-labelledby="epi-titel">
+  <p class="tpm-eyebrow">Field Note 04</p>
+  <h2 id="epi-titel">Das epistemische Modell.</h2>
+  <p class="tpm-lead">Dahinter steht eine einfache Frage: Woher wissen wir, dass das, was Mensch und KI gemeinsam
+     erarbeiten, tats&#228;chlich belastbar ist? Die Antwort beginnt mit einer klaren Unterscheidung von vier Wissenszust&#228;nden.</p>
+
+  <figure>
+    <img src="assets/epistemisches-modell.png" width="1672" height="941" loading="lazy"
+         alt="Das epistemische Modell: vier Wissenszust&#228;nde &#8211; Fakt (&#252;berpr&#252;fbare Quelle), Hypothese (noch zu pr&#252;fen), Annahme (fehlende Information), Entscheidungsvorschlag (Empfehlung, keine Erkenntnis) &#8211; und der Erkenntnisprozess Observation, Frame, Pattern, Insight, Solution mit unabh&#228;ngiger Pr&#252;fung und R&#252;ckkopplung bei Widerspruch oder neuer Information">
+  </figure>
+
+  <ul class="tpm-states">
+    <li><strong>Fakt</strong><span>L&#228;sst sich auf eine &#252;berpr&#252;fbare Quelle zur&#252;ckf&#252;hren.</span></li>
+    <li><strong>Hypothese</strong><span>Eine m&#246;gliche Erkl&#228;rung, die erst noch gepr&#252;ft werden muss.</span></li>
+    <li><strong>Annahme</strong><span>Macht sichtbar, wo Informationen fehlen.</span></li>
+    <li><strong>Entscheidungs&shy;vorschlag</strong><span>Eine Handlungsempfehlung, keine gesicherte Erkenntnis.</span></li>
+  </ul>
+
+  <div class="tpm-example">
+    <b>Beispiel aus ROBO:</b> Nennt eine Stellenanzeige 50 Prozent Reisebereitschaft, ist das zun&#228;chst eine belegbare
+    Information. Ob die Position deshalb zu einer Bewerberin oder einem Bewerber passt, ist eine Bewertung, die weitere
+    Informationen und Annahmen voraussetzt. Eine KI darf diese Ebenen nicht vermischen und aus einer plausiblen
+    Interpretation keine vermeintliche Tatsache machen.
+  </div>
+
+  <h3>F&#252;nf Stufen, ausdr&#252;cklich iterativ</h3>
+  <p>Die Unterscheidung der Wissenszust&#228;nde durchzieht den gesamten Erkenntnisprozess: Observation &#8594; Frame &#8594; Pattern &#8594; Insight &#8594; Solution. Am Anfang steht eine
+     Beobachtung. Sie wird in ihren Kontext eingeordnet, auf wiederkehrende Muster untersucht und darauf gepr&#252;ft,
+     welche Erkenntnisse sich tats&#228;chlich ableiten lassen. Erst danach entstehen L&#246;sungen. Neue Informationen,
+     Widerspr&#252;che oder widerlegte Hypothesen f&#252;hren jederzeit zu einer fr&#252;heren Stufe zur&#252;ck, bis hin zur
+     urspr&#252;nglichen Fragestellung.</p>
+
+  <h3>Zu jeder wesentlichen Erkenntnis geh&#246;ren</h3>
+  <ul class="tpm-checklist">
+    <li>ihre Quellen</li>
+    <li>die verwendeten Annahmen</li>
+    <li>offene Unsicherheiten</li>
+    <li>die Argumente, die gegen sie sprechen</li>
+    <li>die Fragestellung selbst und ihr Einfluss auf die KI-Antwort</li>
+  </ul>
+
+  <h3>&#220;bertragen auf agentische Architekturen</h3>
+  <p>Kontrolliert wird nicht erst die Ausf&#252;hrung einer Aufgabe, sondern bereits die Qualit&#228;t der Informationen und
+     Schlussfolgerungen, auf deren Grundlage ein Agent handelt. Eine zweite, unabh&#228;ngige Pr&#252;finstanz sucht gezielt nach
+     unbelegten Behauptungen, fehlerhaften Schlussfolgerungen und &#252;bersehenen Gegenargumenten. Bei relevanten
+     Widerspr&#252;chen geht der Vorgang zur&#252;ck in die Pr&#252;fung, statt ungepr&#252;ft zur n&#228;chsten Aktion &#252;berzugehen. Diese
+     Pr&#252;fschicht ist der n&#228;chste Entwicklungsschritt in ROBO.</p>
+
+  <p class="tpm-core">Eine KI darf nicht nur zu einem Ergebnis kommen. Sie muss es erm&#246;glichen, dessen Entstehung,
+     Belastbarkeit und Grenzen kritisch zu pr&#252;fen. Die abschlie&#223;ende Verantwortung tr&#228;gt der Mensch.</p>
+  <p class="tpm-note">Arbeitsmodell, Stand November 2026. Ein unabh&#228;ngiger Wirksamkeitsnachweis steht noch aus.</p>
+</section>
   </div>
 </section>
 
