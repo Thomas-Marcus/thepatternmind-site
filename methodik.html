@@ -395,7 +395,7 @@
       <div class="dk"><strong>Andy Clark &amp; David Chalmers</strong><span>Extended Mind</span><em>Funktionale Erweiterung kognitiver Prozesse</em><span class="im">Im Modell: Das gemeinsame Gedächtnis, der künstliche Hippocampus, erweitert das Denken über das einzelne Gespräch hinaus.</span></div>
       <div class="dk"><strong>John Dewey &amp; C. S. Peirce</strong><span>Pragmatismus und Untersuchung</span><em>Erkenntnis, Handlung und Konsequenz</em><span class="im">Im Modell: Aus Mustern entstehen Hypothesen (Abduktion), die sich in ihren Konsequenzen bewähren müssen: Pattern → Insight → Solution.</span></div>
     </div>
-    <p class="denker-note">Kant und Dennett stehen für zwei Seiten des Modells: Kant für die Autonomie des Menschen, Dennett für die Kompetenz der Maschine. Gerade diese Spannung ist gewollt. Sie hält auseinander, was die Maschine leisten kann und was der Mensch verantworten muss.</p>
+    <p class="denker-note">Kant und Dennett beantworten verschiedene Fragen. Kant beantwortet die normative: Was darf sein, und wer trägt Verantwortung? Dennett beantwortet die beschreibende: Was kann eine Maschine leisten, ohne zu verstehen? Wo beide über die Natur der Freiheit streiten, bleibt der Streit offen.</p>
 
     <div class="zwei">
       <div>
@@ -633,7 +633,10 @@
      Prompt Engineering, Retrieval-Augmented Generation, Guardrails, Multi-Agenten-Prüfung und Human-in-the-Loop. Parallel
      entstehen modellinterne Ansätze wie Kalibrierung und Unsicherheitsschätzung. Das KI-Gehirnmodell verbindet beide
      Richtungen in einer Architektur aus vier Komponenten. Funktionsprinzipien des Gehirns dienen dabei als Vorlage,
-     nicht als Bauplan.</p>
+     nicht als Bauplan. Damit steht das Modell in der Tradition der Neuroscience-Inspired AI: Hassabis und Kollegen
+     (DeepMind, <a href="https://doi.org/10.1016/j.neuron.2017.06.011">Neuron 2017</a>) nutzen das Gehirn als Ideengeber
+     auf der Ebene von Funktionen und Algorithmen, nicht als Bauplan. <a href="https://arxiv.org/abs/2405.14831">HippoRAG</a>
+     (NeurIPS 2024) überträgt die Indexierungstheorie des Hippocampus auf das Gedächtnis von Sprachmodellen.</p>
 
   <figure>
     <img src="assets/ki-gehirnmodell.webp" width="1254" height="1254" loading="lazy"
@@ -650,6 +653,9 @@
   <p>Für jede Komponente gibt es heute technische Teillösungen. Das Modell betrachtet sie als Gesamtheit: Entscheidend
      ist ihr Zusammenspiel, nicht die einzelne Funktion. Die Messgrößen machen die These prüfbar. Sinkt etwa der Anteil
      vorschneller Zustimmungen nicht, ist die These für die künstliche Amygdala widerlegt.</p>
+
+  <p>Auf Anwendungsebene, etwa in ROBO, ist die externe Prüfinstanz der gangbare Weg. Die integrierte Selbstprüfung setzt
+     direkt in der Modellarchitektur an und lässt sich mit offenen Modellen bereits heute erproben.</p>
 
   <h3>Zwei Abfolgen, die ineinandergreifen</h3>
   <p>Die Funktionslogik <span class="tpm-flow">Erinnern &#8594; Warnen &#8594; Filtern &#8594; Analysieren &#8594; Entscheiden</span>
