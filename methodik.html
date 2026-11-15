@@ -379,6 +379,7 @@
         <li><strong>Was:</strong> Eine Methode, mit der Mensch und KI gemeinsam Erkenntnisse erarbeiten, die sich überprüfen lassen.</li>
         <li><strong>Das Problem:</strong> KI-Antworten klingen überzeugend, auch wenn sie unbelegt sind oder dem Nutzer nur zustimmen. Ungeprüft landen sie in Analysen, Strategiepapieren und Entscheidungsvorlagen.</li>
         <li><strong>Der Nutzen:</strong> Jede Aussage trägt ihren Wissenszustand: Fakt, Hypothese, Annahme oder Entscheidungsvorschlag. Entscheider sehen, worauf eine Empfehlung beruht und wo sie unsicher ist.</li>
+        <li><strong>Die Belege:</strong> Fünf Projekte wenden die Methode an, mit offenen Daten und Programmen. <a href="#anwendung">Zu den Belegen</a></li>
       </ul>
     </div>
 
@@ -669,11 +670,63 @@
   </div>
 </section>
 
-<section class="wm" style="border-top:1px solid var(--line)">
+<style>
+  .belege { list-style: none; padding: 0; margin: 2.25rem 0 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.1rem; }
+  .belege li { background: var(--surface); border: 1px solid var(--line); border-left: 3px solid var(--gold); border-radius: 4px;
+               padding: 1.2rem 1.3rem; display: flex; flex-direction: column; }
+  .belege .b-tag { font-size: .75rem; font-weight: 700; letter-spacing: .12em; color: var(--gold-text, var(--gold)); margin: 0 0 .4rem; }
+  .belege h3 { font-size: 1.1rem; margin: 0 0 .5rem; }
+  .belege p { color: var(--muted); font-size: .93rem; line-height: 1.55; margin: 0 0 .8rem; }
+  .belege p strong { color: var(--ink); font-weight: 600; }
+  .belege .b-links { margin-top: auto; display: flex; flex-wrap: wrap; gap: .4rem 1.1rem; font-size: .9rem; }
+  @media (max-width: 900px) { .belege { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 820px) { .belege { grid-template-columns: 1fr; } }
+</style>
+
+<section class="wm" id="anwendung" style="border-top:1px solid var(--line)">
   <div class="container">
-    <h2>Von der Methode zur Anwendung.</h2>
-    <p class="lead">Wie die Methodik in konkreten Projekten wirkt, zeigen Energiesystemanalyse, Strategiepapiere und Arbeitsproben auf der Startseite. Die Analyse „Energiesystem Deutschland 2015–2025“ etwa arbeitet mit acht Modellen und 42 automatisierten Tests.</p>
-    <p class="mehr"><a href="index.html#projekte">Zu den Projekten</a></p>
+    <p class="rubrik">04 / VON DER METHODE ZUR ANWENDUNG</p>
+    <h2>Angewendet, nicht nur gedacht.</h2>
+    <p class="lead">Jedes Projekt auf der Startseite setzt einen Teil der Methode praktisch um. Welcher Teil das ist, zeigen die folgenden Beispiele.</p>
+
+    <ul class="belege">
+      <li>
+        <p class="b-tag">GEGENPRÜFUNG · POPPER</p>
+        <h3>Energiesystem Deutschland 2015–2025</h3>
+        <p>Rund 96.000 Stunden offener Daten der Bundesnetzagentur, acht Modelle, vier Robustheitsprüfungen und <strong>42 automatische Tests</strong>. Daten und Programme sind öffentlich und zitierfähig, jede Zahl lässt sich nachrechnen. Ein Fachartikel zu den Kernbefunden ist zur Begutachtung eingereicht.</p>
+        <p class="b-links"><a href="https://github.com/Thomas-Marcus/energiesystem-deutschland">GitHub-Repository</a><a href="https://doi.org/10.5281/zenodo.24116810">DOI (Zenodo)</a></p>
+      </li>
+      <li>
+        <p class="b-tag">VIER WISSENSZUSTÄNDE · FIELD NOTE 04</p>
+        <h3>Energy Pattern Intelligence</h3>
+        <p>Ein 30-seitiges, anbieterneutrales Strategiepapier zur KI-gestützten Infrastrukturentwicklung. <strong>Jede Aussage ist als Fakt, Hypothese, Annahme oder Entscheidungsvorschlag gekennzeichnet.</strong> Leser sehen jederzeit, was belegt ist und was eine Empfehlung bleibt.</p>
+        <p class="b-links"><a href="https://de.linkedin.com/posts/thomasmarcuskoehler_energy-pattern-intelligence-energiewende-activity-7516461983483834368-hdXG">Projektexposé auf LinkedIn</a></p>
+      </li>
+      <li>
+        <p class="b-tag">PRÜFINSTANZ · FIELD NOTE 04</p>
+        <h3>ROBO</h3>
+        <p>Ein Freigabeprozess als Zustandsmodell in Google Apps Script. Getrennte Test- und Live-Umgebung, synthetische Testfälle und eine <strong>Vorabprüfung vor jeder Änderung am Produktivsystem</strong>. Von hier stammt das Beispiel zur Reisebereitschaft; die zweite Prüfinstanz ist der nächste Entwicklungsschritt.</p>
+        <p class="b-links"><a href="index.html#projekte">Zur Projektbeschreibung</a></p>
+      </li>
+      <li>
+        <p class="b-tag">51 % MENSCH · FIELD NOTE 05</p>
+        <h3>Decision Pattern Mapping</h3>
+        <p>Ein Konzept für die Finanzberatung mit einem klaren Grundsatz: <strong>Nicht die KI entscheidet, welches Produkt verkauft wird.</strong> Sie macht überprüfbare Muster sichtbar, die Beraterin oder der Berater trägt die fachliche Verantwortung. Die Evidenzkette führt von der Beobachtung über die Gegenprüfung zum Pilot.</p>
+        <p class="b-links"><a href="index.html#projekte">Zur Projektbeschreibung</a></p>
+      </li>
+      <li>
+        <p class="b-tag">OBSERVATION → SOLUTION</p>
+        <h3>Operations Intelligence</h3>
+        <p>Am Anfang steht Beobachtung: Feldnotizen aus einer eigenständigen, <strong>49-seitigen Feldstudie</strong> in der Zustellung. Daraus folgen Ursachenmuster und die Spezifikation eines hybriden Agenten. Regeln und Geodaten prüfen den Zielort, <strong>bei Konflikten entscheidet ein Mensch.</strong></p>
+        <p class="b-links"><a href="index.html#projekte">Zur Projektbeschreibung</a></p>
+      </li>
+      <li>
+        <p class="b-tag">QUELLEN · NACHVOLLZIEHBARKEIT</p>
+        <h3>Offene Nachweise</h3>
+        <p>Programme, Daten und Methodik sind öffentlich dokumentiert und über eine persönliche wissenschaftliche Kennung zugeordnet. Kritik und Gegenbelege lassen sich damit direkt am Material führen.</p>
+        <p class="b-links"><a href="https://github.com/Thomas-Marcus">GitHub</a><a href="https://orcid.org/0009-0006-1808-3141">ORCID</a></p>
+      </li>
+    </ul>
   </div>
 </section>
 
