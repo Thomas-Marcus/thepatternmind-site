@@ -296,6 +296,11 @@
   .dk strong { display: block; font-size: 1.05rem; margin-bottom: .2rem; }
   .dk span { display: block; color: var(--muted); font-size: .93rem; }
   .dk em { display: block; font-style: normal; color: var(--gold); font-size: .88rem; margin-top: .35rem; }
+  .dk .im { display: block; color: var(--ink); font-size: .88rem; line-height: 1.5; margin-top: .55rem; padding-top: .55rem; border-top: 1px solid var(--line); }
+  .kurz { margin: 2rem 0 0; }
+  .kurz ul { margin: 0; padding-left: 1.2rem; display: grid; gap: .55rem; }
+  .kurz li strong { color: var(--ink); }
+  .denker-note { color: var(--muted); font-size: .95rem; max-width: 46rem; margin: -1.5rem 0 3rem; }
   .zwei { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(1.5rem, 4vw, 3.5rem); margin-bottom: 3rem; }
   .zwei h3 { font-size: 1.3rem; margin-bottom: .75rem; }
   .zwei p { color: var(--muted); }
@@ -368,17 +373,27 @@
     <h2>Kann im Dialog von Mensch und KI mehr Erkenntnis entstehen als bei jedem allein?</h2>
     <p class="lead">THE PATTERN MIND verbindet klassische Erkenntnistheorie, philosophische Hermeneutik, kritischen Rationalismus, Kognitionsphilosophie und Human-AI-Collaboration. Philosophie dient dabei nicht der nachträglichen Rechtfertigung, sondern der Prüfung: Ist die Methode begründbar, wo liegen ihre Grenzen, und wie lässt sich ihre Wirksamkeit messen?</p>
 
-    <div class="denker">
-      <div class="dk"><strong>Sokrates</strong><span>Dialog und Prüfung vermeintlichen Wissens</span><em>Fragen und Gegenfragen</em></div>
-      <div class="dk"><strong>Hans-Georg Gadamer</strong><span>Hermeneutik und Vorverständnis</span><em>Wandel des Problemverständnisses</em></div>
-      <div class="dk"><strong>Karl Popper</strong><span>Kritischer Rationalismus</span><em>Widerlegbarkeit und Gegenprüfung</em></div>
-      <div class="dk"><strong>Daniel Dennett</strong><span>Intentionalität, Kognition, Bewusstsein</span><em>Kompetenz ohne vorschnelle Bewusstseinszuschreibung</em></div>
-      <div class="dk"><strong>Immanuel Kant</strong><span>Vernunft und Autonomie</span><em>Menschliche Selbstbestimmung</em></div>
-      <div class="dk"><strong>René Descartes</strong><span>Methodischer Zweifel</span><em>Infragestellung von Annahmen</em></div>
-      <div class="dk"><strong>Thomas S. Kuhn</strong><span>Paradigmen und wissenschaftlicher Wandel</span><em>Wechsel grundlegender Denkrahmen</em></div>
-      <div class="dk"><strong>Andy Clark &amp; David Chalmers</strong><span>Extended Mind</span><em>Funktionale Erweiterung kognitiver Prozesse</em></div>
-      <div class="dk"><strong>John Dewey &amp; C. S. Peirce</strong><span>Pragmatismus und Untersuchung</span><em>Erkenntnis, Handlung und Konsequenz</em></div>
+    <div class="forschung kurz">
+      <p class="rubrik">KURZ GESAGT</p>
+      <ul>
+        <li><strong>Was:</strong> Eine Methode, mit der Mensch und KI gemeinsam Erkenntnisse erarbeiten, die sich überprüfen lassen.</li>
+        <li><strong>Das Problem:</strong> KI-Antworten klingen überzeugend, auch wenn sie unbelegt sind oder dem Nutzer nur zustimmen. Ungeprüft landen sie in Analysen, Strategiepapieren und Entscheidungsvorlagen.</li>
+        <li><strong>Der Nutzen:</strong> Jede Aussage trägt ihren Wissenszustand: Fakt, Hypothese, Annahme oder Entscheidungsvorschlag. Entscheider sehen, worauf eine Empfehlung beruht und wo sie unsicher ist.</li>
+      </ul>
     </div>
+
+    <div class="denker">
+      <div class="dk"><strong>Sokrates</strong><span>Dialog und Prüfung vermeintlichen Wissens</span><em>Fragen und Gegenfragen</em><span class="im">Im Modell: Die KI fragt nach, statt zuzustimmen: Woran ist das erkennbar, was spricht dagegen?</span></div>
+      <div class="dk"><strong>Hans-Georg Gadamer</strong><span>Hermeneutik und Vorverständnis</span><em>Wandel des Problemverständnisses</em><span class="im">Im Modell: Jede Antwort verschiebt das Vorverständnis der nächsten Frage. Daraus entsteht die Erkenntnisspirale (Field Note 01).</span></div>
+      <div class="dk"><strong>Karl Popper</strong><span>Kritischer Rationalismus</span><em>Widerlegbarkeit und Gegenprüfung</em><span class="im">Im Modell: Hypothesen sind so formuliert, dass sie scheitern können. Gegenargumente gehören zu jeder Erkenntnis (Field Note 04).</span></div>
+      <div class="dk"><strong>Daniel Dennett</strong><span>Intentionalität, Kognition, Bewusstsein</span><em>Kompetenz ohne vorschnelle Bewusstseinszuschreibung</em><span class="im">Im Modell: Die künstliche Amygdala braucht überprüfbare Kompetenz, kein Bewusstsein (Field Note 05).</span></div>
+      <div class="dk"><strong>Immanuel Kant</strong><span>Vernunft und Autonomie</span><em>Menschliche Selbstbestimmung</em><span class="im">Im Modell: Der Mensch ist Zweck, nie bloß Mittel. Die letzte Entscheidung liegt bei ihm: 51 % Mensch, 49 % KI.</span></div>
+      <div class="dk"><strong>René Descartes</strong><span>Methodischer Zweifel</span><em>Infragestellung von Annahmen</em><span class="im">Im Modell: Annahmen sind als Annahmen markiert und werden angezweifelt, bevor sie eine Entscheidung tragen.</span></div>
+      <div class="dk"><strong>Thomas S. Kuhn</strong><span>Paradigmen und wissenschaftlicher Wandel</span><em>Wechsel grundlegender Denkrahmen</em><span class="im">Im Modell: Trägt ein Denkrahmen nicht mehr, wird er bewusst verlassen: Constructive Disruption (Field Note 02).</span></div>
+      <div class="dk"><strong>Andy Clark &amp; David Chalmers</strong><span>Extended Mind</span><em>Funktionale Erweiterung kognitiver Prozesse</em><span class="im">Im Modell: Das gemeinsame Gedächtnis, der künstliche Hippocampus, erweitert das Denken über das einzelne Gespräch hinaus.</span></div>
+      <div class="dk"><strong>John Dewey &amp; C. S. Peirce</strong><span>Pragmatismus und Untersuchung</span><em>Erkenntnis, Handlung und Konsequenz</em><span class="im">Im Modell: Aus Mustern entstehen Hypothesen (Abduktion), die sich in ihren Konsequenzen bewähren müssen: Pattern → Insight → Solution.</span></div>
+    </div>
+    <p class="denker-note">Kant und Dennett stehen für zwei Seiten des Modells: Kant für die Autonomie des Menschen, Dennett für die Kompetenz der Maschine. Gerade diese Spannung ist gewollt. Sie hält auseinander, was die Maschine leisten kann und was der Mensch verantworten muss.</p>
 
     <div class="zwei">
       <div>
@@ -599,6 +614,10 @@
   .tpm-brain .tpm-ratio { font-size: 1.15rem; color: #F2F2F2; margin: 2.25rem 0 .4rem; }
   .tpm-brain .tpm-ratio b { color: #CDAE78; font-weight: 600; }
   .tpm-brain .tpm-flow { color: #F2F2F2; font-weight: 600; letter-spacing: .02em; }
+  .tpm-brain .tpm-states span.tpm-tech, .tpm-brain .tpm-states span.tpm-mess { display: block; margin-top: .7rem; padding-top: .7rem;
+             border-top: 1px solid var(--tpm-line); font-size: .9rem; color: var(--tpm-text); }
+  .tpm-brain .tpm-states span.tpm-mess { border-top: 0; padding-top: 0; margin-top: .45rem; }
+  .tpm-brain .tpm-states b { color: var(--tpm-teal); font-weight: 600; }
 </style>
 
 <section class="tpm-epi tpm-brain" id="ki-gehirnmodell" aria-labelledby="brain-titel">
@@ -620,11 +639,15 @@
   </figure>
 
   <ul class="tpm-states">
-    <li><strong>Künstlicher Hippocampus</strong><span>Das epistemische Gedächtnis. Bewahrt die Erkenntnisgeschichte: Erkenntnisse, Entscheidungen, Annahmen und Einwände.</span></li>
-    <li><strong>Künstliche Amygdala</strong><span>Die kritische Warninstanz. Erkennt Widersprüche, unbelegte Behauptungen und vorschnelle Zustimmung. Prüft, ob eine Aussage als Fakt, Hypothese, Annahme oder Entscheidungsvorschlag auftritt und ob sie diesen Status verdient.</span></li>
-    <li><strong>Künstlicher Thalamus</strong><span>Die Informationssteuerung. Filtert und priorisiert relevante Informationen.</span></li>
-    <li><strong>Künstlicher präfrontaler Cortex</strong><span>Analyse und Entscheidungsvorbereitung. Entwickelt Hypothesen, prüft Alternativen und bewertet Konsequenzen.</span></li>
+    <li><strong>Künstlicher Hippocampus</strong><span>Das epistemische Gedächtnis. Bewahrt die Erkenntnisgeschichte: Erkenntnisse, Entscheidungen, Annahmen und Einwände.</span><span class="tpm-tech"><b>Technisch:</b> Episodisches und semantisches Gedächtnis: persistente Memory-Schichten, Wissensgraphen.</span><span class="tpm-mess"><b>Messgröße:</b> Anteil früherer Entscheidungen und Anforderungen, die in späteren Sitzungen korrekt berücksichtigt werden.</span></li>
+    <li><strong>Künstliche Amygdala</strong><span>Die kritische Warninstanz. Erkennt Widersprüche, unbelegte Behauptungen und vorschnelle Zustimmung. Prüft, ob eine Aussage als Fakt, Hypothese, Annahme oder Entscheidungsvorschlag auftritt und ob sie diesen Status verdient.</span><span class="tpm-tech"><b>Technisch:</b> Integrierte Bewertung von Unsicherheit und Widerspruch während der Antwortgenerierung (Kalibrierung, Unsicherheitsschätzung). Ein Critic- oder Verifier-Agent prüft dagegen erst nachgelagert.</span><span class="tpm-mess"><b>Messgröße:</b> Anteil vorschneller Zustimmungen und unbelegter Behauptungen in einem Testset.</span></li>
+    <li><strong>Künstlicher Thalamus</strong><span>Die Informationssteuerung. Filtert und priorisiert relevante Informationen.</span><span class="tpm-tech"><b>Technisch:</b> Context Routing, Retrieval, Reranking und Attention. Diese Funktion ist technisch am weitesten entwickelt und wird weitgehend abgedeckt. Offen bleiben Fehler in langen Kontexten und falsch priorisierte Quellen.</span><span class="tpm-mess"><b>Messgröße:</b> Trefferquote relevanter Quellen im Kontext einer Antwort.</span></li>
+    <li><strong>Künstlicher präfrontaler Cortex</strong><span>Analyse und Entscheidungsvorbereitung. Entwickelt Hypothesen, prüft Alternativen und bewertet Konsequenzen.</span><span class="tpm-tech"><b>Technisch:</b> Reasoning- und Planning-Komponenten: strukturiertes Schlussfolgern, Planung in agentischen Systemen.</span><span class="tpm-mess"><b>Messgröße:</b> Anteil geprüfter Alternativen und benannter Gegenargumente je Entscheidungsvorschlag.</span></li>
   </ul>
+
+  <p>Für jede Komponente gibt es heute technische Teillösungen. Das Modell betrachtet sie als Gesamtheit: Entscheidend
+     ist ihr Zusammenspiel, nicht die einzelne Funktion. Die Messgrößen machen die These prüfbar. Sinkt etwa der Anteil
+     vorschneller Zustimmungen nicht, ist die These für die künstliche Amygdala widerlegt.</p>
 
   <h3>Zwei Abfolgen, die ineinandergreifen</h3>
   <p>Die Funktionslogik <span class="tpm-flow">Erinnern &#8594; Warnen &#8594; Filtern &#8594; Analysieren &#8594; Entscheiden</span>
@@ -632,8 +655,8 @@
      beschreibt, was im Dialog entsteht. Die Architektur trägt den Prozess.</p>
 
   <p class="tpm-ratio"><b>51 % Mensch. 49 % KI.</b></p>
-  <p>Das Verhältnis ist keine Gewichtung von Intelligenz, sondern ein Symbol für menschliche Entscheidungshoheit. Die letzte
-     Entscheidung bleibt beim Menschen.</p>
+  <p>Das Verhältnis ist keine Gewichtung von Intelligenz. Es bedeutet: Die letzte Entscheidung liegt beim Menschen,
+     nicht mehr und nicht weniger.</p>
 
   <h3>Kompetenz ohne Bewusstseinsbehauptung</h3>
   <p>Leitlinie ist Daniel Dennetts Unterscheidung zwischen Kompetenz und Verständnis. Selbstkritische Verarbeitung setzt kein
@@ -649,7 +672,7 @@
 <section class="wm" style="border-top:1px solid var(--line)">
   <div class="container">
     <h2>Von der Methode zur Anwendung.</h2>
-    <p class="lead">Wie die Methodik in konkreten Projekten wirkt, zeigen Energiesystemanalyse, Strategiepapiere und Arbeitsproben auf der Startseite.</p>
+    <p class="lead">Wie die Methodik in konkreten Projekten wirkt, zeigen Energiesystemanalyse, Strategiepapiere und Arbeitsproben auf der Startseite. Die Analyse „Energiesystem Deutschland 2015–2025“ etwa arbeitet mit acht Modellen und 42 automatisierten Tests.</p>
     <p class="mehr"><a href="index.html#projekte">Zu den Projekten</a></p>
   </div>
 </section>
