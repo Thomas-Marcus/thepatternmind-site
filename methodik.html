@@ -405,6 +405,7 @@
       <p class="rubrik">FORSCHUNGSRICHTUNG</p>
       <h3>Gedächtnis und eine künstliche Amygdala</h3>
       <p>Die aktuellen Überlegungen, Versuche und Forschungsarbeiten von Thomas Marcus Köhler richten sich auf zwei Bausteine für eine verlässlichere Zusammenarbeit von Mensch und KI. Erstens ein gemeinsames, überprüfbares Gedächtnis: eine Erkenntnisgeschichte mit Annahmen, Einwänden, verworfenen Alternativen und Entscheidungen, die über einzelne Gespräche hinaus trägt. Zweitens, als Arbeitshypothese, eine Art künstliche Amygdala: eine eigenständige Bewertungsinstanz, die vor jeder Antwort Bedeutung, Risiko und Unsicherheit markiert, Widerspruch auslöst, wo bloße Zustimmung droht, und Behauptungen ohne Beleg zurückhält.</p>
+      <p>Aus diesen zwei Bausteinen ist inzwischen ein Modell mit vier Komponenten entstanden: künstlicher Hippocampus, künstliche Amygdala, künstlicher Thalamus und künstlicher präfrontaler Cortex. <a href="#ki-gehirnmodell">Weiter zu Field Note 05</a></p>
       <p class="f-note">Die Amygdala dient dabei als Metapher für eine Bewertungs- und Warnfunktion, nicht als Nachbildung menschlicher Gefühle. Ob sie Sycophantismus und Halluzination messbar verringert, soll im Vergleich von Arbeit ohne KI, gewöhnlicher KI-Nutzung und strukturiertem Pattern Dialogue geprüft werden.</p>
     </div>
   </div>
@@ -590,6 +591,57 @@
   <p class="tpm-core">Eine KI darf nicht nur zu einem Ergebnis kommen. Sie muss es erm&#246;glichen, dessen Entstehung,
      Belastbarkeit und Grenzen kritisch zu pr&#252;fen. Die abschlie&#223;ende Verantwortung tr&#228;gt der Mensch.</p>
   <p class="tpm-note">Arbeitsmodell, Stand November 2026. Ein unabh&#228;ngiger Wirksamkeitsnachweis steht noch aus.</p>
+</section>
+
+<!-- THE PATTERN MIND · Field Note 05 „Das KI-Gehirnmodell“ – Grafik: assets/ki-gehirnmodell.png -->
+<style>
+  .tpm-brain figure { max-width: 760px; margin-left: auto; margin-right: auto; }
+  .tpm-brain .tpm-ratio { font-size: 1.15rem; color: #F2F2F2; margin: 2.25rem 0 .4rem; }
+  .tpm-brain .tpm-ratio b { color: #CDAE78; font-weight: 600; }
+  .tpm-brain .tpm-flow { color: #F2F2F2; font-weight: 600; letter-spacing: .02em; }
+</style>
+
+<section class="tpm-epi tpm-brain" id="ki-gehirnmodell" aria-labelledby="brain-titel">
+  <p class="tpm-eyebrow">Field Note 05</p>
+  <h2 id="brain-titel">Vom Prüfen zum Selbstprüfen: das KI-Gehirnmodell.</h2>
+  <p class="tpm-lead">Field Note 04 überträgt das epistemische Modell auf agentische Architekturen: Eine zweite Prüfinstanz
+     findet unbelegte Behauptungen, bevor der Agent handelt. Field Note 05 geht einen Schritt weiter. Die These: Epistemische
+     Selbstkritik gehört nicht nur in zusätzliche Prüfschichten, sondern in die Architektur selbst.</p>
+
+  <p>Gegen Sycophantismus und Halluzinationen setzt die Entwicklung heute vor allem Verfahren außerhalb des Sprachmodells ein:
+     Prompt Engineering, Retrieval-Augmented Generation, Guardrails, Multi-Agenten-Prüfung und Human-in-the-Loop. Parallel
+     entstehen modellinterne Ansätze wie Kalibrierung und Unsicherheitsschätzung. Das KI-Gehirnmodell verbindet beide
+     Richtungen in einer Architektur aus vier Komponenten. Funktionsprinzipien des Gehirns dienen dabei als Vorlage,
+     nicht als Bauplan.</p>
+
+  <figure>
+    <img src="assets/ki-gehirnmodell.png" width="1254" height="1254" loading="lazy"
+         alt="Das KI-Gehirnmodell von THE PATTERN MIND: künstlicher Hippocampus (gemeinsame Erinnerung und Erkenntnisgeschichte), künstliche Amygdala (epistemische Warninstanz gegen Sycophantismus, Halluzinationen und unbelegte Annahmen), künstlicher Thalamus (Relevanzfilter und Priorisierung) und künstlicher präfrontaler Cortex (Analyse, Hypothesen, Entscheidungsvorbereitung). Funktionslogik: Erinnern, Warnen, Filtern, Analysieren, Entscheiden. Die Entscheidung trifft der Mensch mit KI-Unterstützung, symbolisiert durch 51 Prozent Mensch und 49 Prozent KI.">
+  </figure>
+
+  <ul class="tpm-states">
+    <li><strong>Künstlicher Hippocampus</strong><span>Das epistemische Gedächtnis. Bewahrt die Erkenntnisgeschichte: Erkenntnisse, Entscheidungen, Annahmen und Einwände.</span></li>
+    <li><strong>Künstliche Amygdala</strong><span>Die kritische Warninstanz. Erkennt Widersprüche, unbelegte Behauptungen und vorschnelle Zustimmung. Prüft, ob eine Aussage als Fakt, Hypothese, Annahme oder Entscheidungsvorschlag auftritt und ob sie diesen Status verdient.</span></li>
+    <li><strong>Künstlicher Thalamus</strong><span>Die Informationssteuerung. Filtert und priorisiert relevante Informationen.</span></li>
+    <li><strong>Künstlicher präfrontaler Cortex</strong><span>Analyse und Entscheidungsvorbereitung. Entwickelt Hypothesen, prüft Alternativen und bewertet Konsequenzen.</span></li>
+  </ul>
+
+  <h3>Zwei Abfolgen, die ineinandergreifen</h3>
+  <p>Die Funktionslogik <span class="tpm-flow">Erinnern &#8594; Warnen &#8594; Filtern &#8594; Analysieren &#8594; Entscheiden</span>
+     beschreibt, wie das System verarbeitet. Der fünfstufige Erkenntnisprozess von Observation bis Solution aus Field Note 04
+     beschreibt, was im Dialog entsteht. Die Architektur trägt den Prozess.</p>
+
+  <p class="tpm-ratio"><b>51 % Mensch. 49 % KI.</b></p>
+  <p>Das Verhältnis ist keine Gewichtung von Intelligenz, sondern ein Symbol für menschliche Entscheidungshoheit. Die letzte
+     Entscheidung bleibt beim Menschen.</p>
+
+  <h3>Kompetenz ohne Bewusstseinsbehauptung</h3>
+  <p>Leitlinie ist Daniel Dennetts Unterscheidung zwischen Kompetenz und Verständnis. Selbstkritische Verarbeitung setzt kein
+     Bewusstsein voraus. Sie braucht überprüfbare Mechanismen, die begründete Aussagen von unsicheren Annahmen trennen.
+     Ob aus Gedächtnis und Selbstbewertung mehr als Zuverlässigkeit entsteht, bleibt eine offene Frage.</p>
+
+  <p class="tpm-core">Das Modell ist als These formuliert, damit es prüfbar ist. Widerspruch und Gegenbelege sind
+     ausdrücklich erwünscht. Nur durch Reibung entsteht die Wärme der Erkenntnis.</p>
 </section>
   </div>
 </section>
